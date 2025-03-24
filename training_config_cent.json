@@ -1,0 +1,38 @@
+{
+    "data_path": "./datasets",
+    "result_path": "./results",
+    
+    "dataset": "face_images_2",
+    "image_size": [128, 128],
+    "train_split": 0.8,
+    "algorithm": "FedAvg",
+    "private_model_type": "CNN2",
+    "proxy_model_type": "CNN2",
+    "n_client_data": 1500,
+    "lr": 0.001,
+    "n_epochs": 1,
+    "n_rounds": 3,
+    "batch_size": 250,
+    "in_channel": 3,
+    "n_class": 0,
+    "lora_rank": 8,
+    "dml_weight": 0.5,
+    
+    "use_private_SGD": 0,
+    "optimizer": "adam",
+    "accountant": "rdp",
+    "secure_mode": false,
+    "noise_multiplier": 1.0,
+    "l2_norm_clip": 1.0,
+    "dp_optimizer_selection": "new",
+    "device": 0,
+    "momentum": 0.9,
+
+    "verbose": 1,
+    "port": 8002,
+    "max_retries": 10,
+    "retry_delay": 10,
+
+    "use_data_poisoning": 0,
+    "attack_type": ""
+}
